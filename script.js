@@ -12,6 +12,7 @@ const toys = 100 * 5;
 const shirts = 150 * NONE_SELECTED;
 const batteries = 35 * 2;
 const pens = 5 * NONE_SELECTED;
+const total = shoes + batteries + pens + shirts
 
 if (country === "RSA") {
     currency = "R";
@@ -29,11 +30,11 @@ if (country === "North Korea") {
     console.log(BANNED_WARNING)
 } 
 
-if (country === "RSA" && shoes + batteries + pens + shirts >= 1000) {
+if (country === "RSA" && total >= 1000) {
         shipping = 0;
       }
-      else if (country === "NAM" && shoes + batteries + pens + shirts >= 60) {
+      else if (country === "NAM" && total >= 60) {
         shipping = 0
       } 
-      else (shipping >= 0 && customers !== 1 && country === "RSA" || country === "NAM"); { 
+      else if (shipping >= 0 && customers !== 1 && country === "RSA" || country === "NAM"); { 
         console.log(FREE_WARNING) }
